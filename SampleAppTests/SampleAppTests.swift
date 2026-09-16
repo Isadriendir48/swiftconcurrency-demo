@@ -40,6 +40,8 @@ struct SampleAppTests {
             client: client
         )
         
+        // The offset passed to this call has no effect on the outcome
+        // The result is parsed from the custom `payload` object
         let result = try await repository.getPokemons(
             limit: 3,
             offset: 0
@@ -51,6 +53,7 @@ struct SampleAppTests {
         
         #expect(result.nextOffset == 3)
         #expect(result.items.count == 3)
+        #expect(result.hasMore == true)
         #expect(lastItem.id == 3)
         #expect(lastItem.name == "item-3")
     }
