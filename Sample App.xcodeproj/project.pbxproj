@@ -22,14 +22,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FCA8724E303D52FA00670A33 /* Sample AppTests */ = {
+		FCA8724E303D52FA00670A33 /* SampleAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Sample AppTests";
+			path = SampleAppTests;
 			sourceTree = "<group>";
 		};
-		FCC479E1303B8603001D9F3F /* Sample App */ = {
+		FCC479E1303B8603001D9F3F /* SampleApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Sample App";
+			path = SampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,8 +55,8 @@
 		FCC479D6303B8603001D9F3F = {
 			isa = PBXGroup;
 			children = (
-				FCC479E1303B8603001D9F3F /* Sample App */,
-				FCA8724E303D52FA00670A33 /* Sample AppTests */,
+				FCC479E1303B8603001D9F3F /* SampleApp */,
+				FCA8724E303D52FA00670A33 /* SampleAppTests */,
 				FCC479E0303B8603001D9F3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 				FCA87252303D52FA00670A33 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				FCA8724E303D52FA00670A33 /* Sample AppTests */,
+				FCA8724E303D52FA00670A33 /* SampleAppTests */,
 			);
 			name = "Sample AppTests";
 			packageProductDependencies = (
@@ -109,7 +109,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FCC479E1303B8603001D9F3F /* Sample App */,
+				FCC479E1303B8603001D9F3F /* SampleApp */,
 			);
 			name = "Sample App";
 			packageProductDependencies = (
@@ -126,7 +126,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
-				LastUpgradeCheck = 2660;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					FCA8724C303D52FA00670A33 = {
 						CreatedOnToolsVersion = 26.6;
@@ -206,7 +206,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.islabs.Sample-AppTests";
@@ -227,7 +226,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.islabs.Sample-AppTests";
@@ -277,6 +275,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -300,6 +299,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -340,6 +340,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -356,6 +357,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -368,7 +370,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,7 +401,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U8K9H9ZZJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

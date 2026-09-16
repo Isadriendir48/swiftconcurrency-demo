@@ -1,5 +1,5 @@
 //
-//  Sample_AppTests.swift
+//  SampleAppTests.swift
 //  Sample AppTests
 //
 //  Created by Andres Olguin on 24/08/2026.
@@ -9,7 +9,7 @@
 import Testing
 import Foundation
 
-struct Sample_AppTests {
+struct SampleAppTests {
     @Test("Maps DTOs to domain models with nextOffset parsed")
     func getsPokemonsAndParsesOffset() async throws {
         let payload = """
