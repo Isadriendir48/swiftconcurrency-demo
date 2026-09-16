@@ -17,8 +17,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FCA8724D303D52FA00670A33 /* Sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC479DF303B8603001D9F3F /* Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA8724D303D52FA00670A33 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC479DF303B8603001D9F3F /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -64,8 +64,8 @@
 		FCC479E0303B8603001D9F3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCC479DF303B8603001D9F3F /* Sample App.app */,
-				FCA8724D303D52FA00670A33 /* Sample AppTests.xctest */,
+				FCC479DF303B8603001D9F3F /* SampleApp.app */,
+				FCA8724D303D52FA00670A33 /* SampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCA8724C303D52FA00670A33 /* Sample AppTests */ = {
+		FCA8724C303D52FA00670A33 /* SampleAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCA87253303D52FA00670A33 /* Build configuration list for PBXNativeTarget "Sample AppTests" */;
+			buildConfigurationList = FCA87253303D52FA00670A33 /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
 			buildPhases = (
 				FCA87249303D52FA00670A33 /* Sources */,
 				FCA8724A303D52FA00670A33 /* Frameworks */,
@@ -89,16 +89,16 @@
 			fileSystemSynchronizedGroups = (
 				FCA8724E303D52FA00670A33 /* SampleAppTests */,
 			);
-			name = "Sample AppTests";
+			name = SampleAppTests;
 			packageProductDependencies = (
 			);
 			productName = "Sample AppTests";
-			productReference = FCA8724D303D52FA00670A33 /* Sample AppTests.xctest */;
+			productReference = FCA8724D303D52FA00670A33 /* SampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FCC479DE303B8603001D9F3F /* Sample App */ = {
+		FCC479DE303B8603001D9F3F /* SampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC479EA303B8604001D9F3F /* Build configuration list for PBXNativeTarget "Sample App" */;
+			buildConfigurationList = FCC479EA303B8604001D9F3F /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
 				FCC479DB303B8603001D9F3F /* Sources */,
 				FCC479DC303B8603001D9F3F /* Frameworks */,
@@ -111,11 +111,11 @@
 			fileSystemSynchronizedGroups = (
 				FCC479E1303B8603001D9F3F /* SampleApp */,
 			);
-			name = "Sample App";
+			name = SampleApp;
 			packageProductDependencies = (
 			);
 			productName = "Sample App";
-			productReference = FCC479DF303B8603001D9F3F /* Sample App.app */;
+			productReference = FCC479DF303B8603001D9F3F /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FCC479DA303B8603001D9F3F /* Build configuration list for PBXProject "Sample App" */;
+			buildConfigurationList = FCC479DA303B8603001D9F3F /* Build configuration list for PBXProject "SampleApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,8 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCC479DE303B8603001D9F3F /* Sample App */,
-				FCA8724C303D52FA00670A33 /* Sample AppTests */,
+				FCC479DE303B8603001D9F3F /* SampleApp */,
+				FCA8724C303D52FA00670A33 /* SampleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +194,7 @@
 /* Begin PBXTargetDependency section */
 		FCA87252303D52FA00670A33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FCC479DE303B8603001D9F3F /* Sample App */;
+			target = FCC479DE303B8603001D9F3F /* SampleApp */;
 			targetProxy = FCA87251303D52FA00670A33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -216,7 +216,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sample App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SampleApp";
 			};
 			name = Debug;
 		};
@@ -236,7 +236,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sample App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SampleApp";
 			};
 			name = Release;
 		};
@@ -428,7 +428,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCA87253303D52FA00670A33 /* Build configuration list for PBXNativeTarget "Sample AppTests" */ = {
+		FCA87253303D52FA00670A33 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCA87254303D52FA00670A33 /* Debug */,
@@ -437,7 +437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC479DA303B8603001D9F3F /* Build configuration list for PBXProject "Sample App" */ = {
+		FCC479DA303B8603001D9F3F /* Build configuration list for PBXProject "SampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCC479E8303B8604001D9F3F /* Debug */,
@@ -446,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC479EA303B8604001D9F3F /* Build configuration list for PBXNativeTarget "Sample App" */ = {
+		FCC479EA303B8604001D9F3F /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCC479EB303B8604001D9F3F /* Debug */,
