@@ -34,7 +34,7 @@ struct SampleAppTests {
         }
         """.data(using: .utf8)
         
-        let client = FakeHTTPClient(payload: payload, error: nil)
+        let client = FakeHTTPClient(payload: payload)
         
         let repository = PokeAPIPokemonRepository(
             client: client
@@ -82,7 +82,7 @@ struct SampleAppTests {
         }
         """.data(using: .utf8)
         
-        let client = FakeHTTPClient(payload: payload, error: nil)
+        let client = FakeHTTPClient(payload: payload)
         
         let repository = PokeAPIPokemonRepository(
             client: client
@@ -97,5 +97,34 @@ struct SampleAppTests {
         
         #expect(result.nextOffset == nil)
         #expect(result.hasMore == false)
+    }
+    
+    @Test("Throws when 'next' URL has malformed offset")
+    func malformedNextOffsetThrows() async {
+        let payload = """
+        {
+            "count": 1,
+            "next": "https://fake.link?limit=1",
+            "previous": null,
+            "results": [
+                { "name": "item-1", "url": "https://fake.link/item/1/" }
+            ]
+        }
+        """.data(using: .utf8)
+        
+        let client = FakeHTTPClient(payload: payload)
+        let repository = PokeAPIPokemonRepository(client: client)
+        
+        do {
+            _ = try await repository.getPokemons(limit: 1, offset: 0)
+            Issue.record("Expected 'unexpectedResponseShape' to be thrown")
+        } catch PokemonRepositoryError.unexpectedResponseShape {
+            // Expected outcome
+        } catch {
+            Issue.record(
+                error,
+                "Wrong error type, expected 'unexpectedResponseShape'"
+            )
+        }
     }
 }
