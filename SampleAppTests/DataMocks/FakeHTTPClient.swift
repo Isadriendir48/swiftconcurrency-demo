@@ -12,6 +12,11 @@ struct FakeHTTPClient: HTTPClient {
     let payload: Data?
     let error: HTTPClientError?
     
+    init(payload: Data?, error: HTTPClientError? = nil) {
+        self.payload = payload
+        self.error = error
+    }
+    
     func get<ResponseType: Decodable & Sendable>(
         path: String,
         queryItems: [URLQueryItem]
